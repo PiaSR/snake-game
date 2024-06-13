@@ -13,12 +13,14 @@ Features
 
 You can play the Snake Game directly in your web browser:
 
-(https://piasr.github.io/snake-game/)
+https://piasr.github.io/snake-game/
 
 
 # Gameplay
 Arrow Keys: Use the arrow keys (up, down, left, right) to control the direction of the snake.
+
 Score: The score is displayed at the top of the screen. Each food item collected adds points to the score.
+
 Game Over: The game ends if the snake collides with the walls or itself. You can click "PLAY AGAIN" to restart the game.
 
 # Files Structure
