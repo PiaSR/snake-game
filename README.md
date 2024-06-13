@@ -25,5 +25,7 @@ Game Over: The game ends if the snake collides with the walls or itself. You can
 
 # Files Structure
 index.html: Contains the HTML structure of the game.
+
 styles.css: CSS file for styling the game interface.
+
 script.js: JavaScript file containing the game logic and behavior.
