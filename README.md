@@ -8,15 +8,13 @@ Features
 - Game ends if the snake collides with the walls or itself.
 - Play again option with reset functionality.
 
-# Setup
 
-1. Clone the repo
+# Play the Game
 
-git clone https://github.com/PiaSR/snake-game.git
+You can play the Snake Game directly in your web browser:
 
-2. Open index.html in your web browser.
+[Play Snake Game] (https://piasr.github.io/snake-game/)
 
-The game will start automatically. Use arrow keys to control the snake.
 
 # Gameplay
 Arrow Keys: Use the arrow keys (up, down, left, right) to control the direction of the snake.
