@@ -13,7 +13,7 @@ Features
 
 You can play the Snake Game directly in your web browser:
 
-[Play Snake Game] (https://piasr.github.io/snake-game/)
+(https://piasr.github.io/snake-game/)
 
 
 # Gameplay
