@@ -22,12 +22,26 @@ const canvas = document.getElementById('snakeGame');
 
 const ctx = canvas.getContext('2d');
 
+document.addEventListener('DOMContentLoaded', () => {
+ 
+  const startBtn = document.querySelector('.startBtn');
+if (startBtn) {
+  startBtn.addEventListener('click', main);
+} else {
+  console.error('Start button not found!');
+}
+
+const button = document.getElementById('button');
+if (button) {
+  button.addEventListener('click', restartGame);
+} else {
+  console.error('Button not found!');
+}
+});
 
 document.addEventListener('DOMContentLoaded', startButton);
-startBtn.addEventListener('click', main)
-document.addEventListener('keydown', changeDirection); 
-button.addEventListener('click', restartGame);
 
+document.addEventListener('keydown', changeDirection); 
 
 
 function main() {
