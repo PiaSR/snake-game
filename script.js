@@ -25,6 +25,7 @@ const ctx = canvas.getContext('2d');
 document.addEventListener('DOMContentLoaded', () => {
  
   const startBtn = document.querySelector('.startBtn');
+	console.log(startBtn)
 if (startBtn) {
   startBtn.addEventListener('click', main);
 } else {
