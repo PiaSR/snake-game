@@ -1,37 +1,34 @@
 @import url(//fonts.googleapis.com/css2?family=Micro+5);
 
-html{
-  margin:0;
-  padding:0;
+html {
+  margin: 0;
+  padding: 0;
 }
 body {
-  
   margin: 0;
   padding: 0;
   height: 100vh;
   background: linear-gradient(rgba(10, 1, 143, 0.2), rgba(0, 10, 64, 0.2)),
-    url("./stars.jpg");
+    url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-    
 }
 
-div{
- margin-top: 10vh;
- margin-bottom: 5vh;
+div {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
-
 
 #score,
-#scoretext{
+#scoretext {
   text-align: center;
   font-weight: 900;
   font-size: 100px;
   font-family: "Micro 5", sans-serif;
- 
+
   text-shadow: 2px 2px 5px rgb(230, 156, 46);
   color: rgb(207, 250, 53);
 }
@@ -41,24 +38,20 @@ canvas {
   border: 5px solid rgb(207, 250, 53);
   border-radius: 5px;
   box-shadow: 3px 3px 5px rgba(203, 236, 106, 0.5);
-  
-  
 }
 
 .gameOver {
-  transform: scale(1);
-  animation: scaleIn 0.5s linear, blinking 1.5s 3;
-
+  /* transform: scale(1); */
+  animation: blinking 0.5s 3;
 }
 
 .endGameCanvas {
-  
-  animation: blinkingCanvas 0.5s 4;
+  animation: blinkingCanvas 0.5s 3;
   border: 5px solid rgba(251, 134, 7, 0.98);
   box-shadow: 3px 3px 5px rgba(230, 156, 46, 0.5);
 }
 
-.playAgain {
+button {
   font-size: 45px;
   font-family: "Micro 5", sans-serif;
   padding: 15px 45px;
@@ -67,7 +60,7 @@ canvas {
   color: rgba(89, 28, 176, 0.98);
   font-weight: 900;
   padding: 10px;
-  border:none;
+  border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgb(230, 156, 46);
   display: none;
@@ -83,7 +76,8 @@ canvas {
 }
 
 @keyframes scaleIn {
-  0% {transform: scale(5);
+  0% {
+    transform: scale(5);
   }
   50% {
     transform: scale(3);
@@ -96,21 +90,17 @@ canvas {
 @keyframes blinking {
   0% {
     opacity: 1;
-    
   }
   50% {
     opacity: 0;
-    
   }
   100% {
     opacity: 1;
-    
   }
 }
 
 @keyframes blinkingCanvas {
-  
   50% {
     transform: scale(1.017);
-}
+  }
 }
